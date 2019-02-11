@@ -12,15 +12,3 @@ def random_str(n):  # функция недописанная
 
 print(random_str(7))
 
-
-
-
-# def my_function(x, y,z):
-#
-#     return x+y+z
-#
-# suma = my_function(1,2,3)
-#
-# suma = suma - 6
-#
-# print(suma)
