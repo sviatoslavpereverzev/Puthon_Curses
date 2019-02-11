@@ -1,11 +1,26 @@
 """Написать функцию которая возвращает рандомную строку из n элементов"""
 
-from random import choice
+from random import choice, choices
 
-my_str = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890-()'
+my_str = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890'
 
-print(choice(my_str))
+def random_str(n):  # функция недописанная
+    final_str = ''
+    for i in range(int(n)):
+        final_str += choice(my_str)
+    return final_str
+
+print(random_str(7))
 
 
-def random_str():  # функция недописанная
-    return choice(list(my_str))
+
+
+# def my_function(x, y,z):
+#
+#     return x+y+z
+#
+# suma = my_function(1,2,3)
+#
+# suma = suma - 6
+#
+# print(suma)
